@@ -1,0 +1,263 @@
+* {
+     margin: 0;
+            padding: 0;
+ }
+  body{
+    background-color: #698a47;
+  }
+
+ .main-header {
+     padding: 5px;
+     background-color: #fcf9fa;
+     height: 90px;
+ }
+
+ .main-header .header-in {
+     display: flex;
+     justify-content: space-around;
+ }
+
+ .main-header .header-in .logo img{
+    width: 128px;
+    height: 100px;
+ }
+
+ .main-header .header-in .menu ul {
+     display: flex;
+     justify-content: space-evenly;
+ }
+
+ .main-header .header-in .menu ul li {
+     list-style: none;
+     margin: 0;
+     padding: 40px ;
+     color: rgb(22, 22, 22);
+     font-weight: bold;
+ }
+ 
+ .banner {
+  position: relative;
+  text-align: center;
+ }
+
+ .banner .img img {
+  width: 100%;
+  height: 490px;
+  object-fit: cover; /* image ko fit karne ke liye */
+} 
+
+.banner .img p,
+.banner .img h1 {
+  position: absolute;
+  color: rgb(8, 8, 8); 
+}
+
+ .banner .img p {
+  top: 20%;   /* paragraph ki position */
+  left: 25%;
+  font-size: 20px;
+}
+
+.banner .img h1 {
+  top: 25%;   /* heading ki position */
+  left: 25%;
+  font-size: 40px;
+}
+ 
+   .content h1{
+    margin: auto;
+    line-height: 1.3;
+    text-align: center;
+    color: aliceblue;
+   }
+
+ 
+     .threebox{
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.threebox .box1{
+    width: 25%;
+    height: 360px;
+    background-color: rgb(236, 255, 236);
+    margin: 15px;
+    padding: 0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.threebox .box1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ .btn {
+    margin: auto;
+    text-align: center;
+    color: aliceblue;
+   }
+   .btn .btns{
+    background-color: rgb(134, 36, 36);
+    color: aliceblue;
+    border-color: rgb(134, 36, 36);
+    border-radius: 4px;
+    width: 130px;
+    height: 28px;
+   }
+   .btn h4{
+    padding: 10px;
+    line-height: 20px;
+   }
+     
+   .experience{
+    background: #e6e4e4;
+    height: 140px;
+    position: relative;
+   }
+    .card1{
+        position: absolute;
+        left: 19%;
+        top: 0;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+ .card2{
+        position: absolute;
+        left: 41%;
+        top: 0;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+ }
+ .card3{
+        position: absolute;
+        left: 62%;
+        top: 0;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+ }
+     .card{
+        background: #dfcece;
+        width: 200px;
+        height: 100px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+   .container{
+    background-color: #e6e4e4;
+    padding: 30px 50px;
+   }
+   .container h2{
+    font-size: 33px;
+    color: #546e3b ;
+   }
+   .container h5{
+    margin: 10px 0;
+     color: #546e3b ;
+     width: 33%;
+     line-height: 17px;
+     word-spacing: 3px;
+   }
+
+     .box-content{
+        background-color: #e6e4e4;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-content .box2{
+    width: 30%;
+    height: 200px;
+    background-color: rgb(236, 255, 236);
+    margin: 15px;
+    padding: 0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.box-content .box2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (min-width:200px) and (max-width:600px){
+       .main-header{
+        height: auto;
+       }
+         .header-in{
+          display: grid!important;
+          text-align: center;
+        }
+       .header-in .menu ul{
+        display: grid!important;
+       }
+       .main-header .header-in .menu ul li{
+        background-color: #e6e4e4;
+        color: black;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 10px;
+       }
+        .banner{
+          text-align: center;
+        }
+       .banner .img{
+        width: 100%;
+       }
+       .banner p,h1{
+          text-align: center;
+          justify-content: center;
+          font-size: 20px;
+       }
+       .banner .img p{
+        font-size: medium;
+        color: rgb(119, 67, 3);
+       }
+       .banner .img h1{
+        font-size: 30px;
+        color: #698a47;
+       }
+       .threebox{
+        display: flex;
+       }
+       .threebox .box1{
+        width: 30%;
+        height: 200px;
+        margin: 0;
+      
+       }
+       .card{
+          width: 100px;
+          height: 60px;
+
+       }
+       .card1{
+        position: absolute;
+        left: 4%;
+       }
+       .card2{
+        position: absolute;
+        left: 37%;
+       }
+       .card3{
+        position: absolute;
+        left: 69%;
+       }
+       .container h5{
+        width: 60%;
+       }
+}
